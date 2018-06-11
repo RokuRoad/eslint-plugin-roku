@@ -2,8 +2,8 @@
   "license": "MIT",
   "name": "@roku-road/eslint-plugin-brs",
   "repository": "git@github.com:RokuRoad/eslint-plugin-brs.git",
-  "version": "0.5.1",
-  "description": "Roku/BrightScript linter",
+  "version": "0.5.2",
+  "description": "The ESLint custom plugin with rules and parser for .brs files",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -23,7 +23,7 @@
     "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
   },
   "peerDependencies": {
-    "eslint": "4.19.1"
+    "eslint": "latest"
   },
   "dependencies": {
     "@roku-road/bright": "0.5.0"

@@ -1,6 +1,6 @@
-[![npm version](https://img.shields.io/npm/v/@roku-road/eslint-plugin-brs.svg)](https://www.npmjs.com/package/@roku-road/eslint-plugin-rules)
+[![npm version](https://img.shields.io/npm/v/@roku-road/eslint-plugin-brs.svg)](https://www.npmjs.com/package/@roku-road/eslint-plugin-brs)
 [![Downloads/month](https://img.shields.io/npm/dm/@roku-road/eslint-plugin-brs.svg)](http://www.npmtrends.com/@roku-road/eslint-plugin-brs)
-[![Build Status](https://travis-ci.com/RokuRoad/eslint-plugin-brs.svg?branch=master)](https://travis-ci.com/RokuRoad/rules)
+[![Build Status](https://travis-ci.com/RokuRoad/eslint-plugin-brs.svg?branch=master)](https://travis-ci.com/RokuRoad/eslint-plugin-brs)
 [![Coverage Status](https://codecov.io/gh/RokuRoad/eslint-plugin-brs/branch/master/graph/badge.svg)](https://codecov.io/gh/RokuRoad/eslint-plugin-brs)
 [![Dependency Status](https://david-dm.org/RokuRoad/eslint-plugin-brs.svg)](https://david-dm.org/RokuRoad/eslint-plugin-brs)
 
@@ -50,6 +50,8 @@ $ npm install eslint-plugin-brs --save-dev
 
 
 ## Plugin-Provided Rules
+
+*Just as any other project this one requires more feedback and linting rules ideas*
 
 
 ### Parsing and AST
