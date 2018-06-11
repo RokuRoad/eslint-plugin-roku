@@ -2,7 +2,7 @@
   "license": "MIT",
   "name": "@roku-road/eslint-plugin-rules",
   "repository": "git@github.com:RokuRoad/rules.git",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Roku/BrightScript linter",
   "keywords": [
     "eslint",
