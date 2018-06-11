@@ -17,7 +17,9 @@ cache:
 
 script:
   - npm install codecov -g
-  - yarn run test
+  - yarn link
+  - yarn link "@roku-road/eslint-plugin-rules"
+  - yarn run coverage
   - yarn run build
 
 after_success:
