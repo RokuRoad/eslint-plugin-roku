@@ -1,7 +1,7 @@
 {
   "license": "MIT",
-  "name": "@roku-road/eslint-plugin-rules",
-  "repository": "git@github.com:RokuRoad/rules.git",
+  "name": "@roku-road/eslint-plugin-brs",
+  "repository": "git@github.com:RokuRoad/eslint-plugin-brs.git",
   "version": "0.5.1",
   "description": "Roku/BrightScript linter",
   "keywords": [
@@ -11,7 +11,8 @@
     "linter",
     "brightscript",
     "brs",
-    "roku"
+    "roku",
+    "roku-development"
   ],
   "author": "Igor Alpert",
   "main": "dist/index.js",

@@ -1,20 +1,55 @@
-[![npm version](https://img.shields.io/npm/v/@roku-road/rules.svg)](https://www.npmjs.com/package/@roku-road/rules)
-[![Downloads/month](https://img.shields.io/npm/dm/@roku-road/rules.svg)](http://www.npmtrends.com/@roku-road/rules)
-[![Build Status](https://travis-ci.com/RokuRoad/rules.svg?branch=master)](https://travis-ci.com/RokuRoad/rules)
-[![Coverage Status](https://codecov.io/gh/RokuRoad/rules/branch/master/graph/badge.svg)](https://codecov.io/gh/RokuRoad/rules)
-[![Dependency Status](https://david-dm.org/RokuRoad/rules.svg)](https://david-dm.org/RokuRoad/rules)
+[![npm version](https://img.shields.io/npm/v/@roku-road/eslint-plugin-brs.svg)](https://www.npmjs.com/package/@roku-road/eslint-plugin-rules)
+[![Downloads/month](https://img.shields.io/npm/dm/@roku-road/eslint-plugin-brs.svg)](http://www.npmtrends.com/@roku-road/eslint-plugin-brs)
+[![Build Status](https://travis-ci.com/RokuRoad/eslint-plugin-brs.svg?branch=master)](https://travis-ci.com/RokuRoad/rules)
+[![Coverage Status](https://codecov.io/gh/RokuRoad/eslint-plugin-brs/branch/master/graph/badge.svg)](https://codecov.io/gh/RokuRoad/eslint-plugin-brs)
+[![Dependency Status](https://david-dm.org/RokuRoad/eslint-plugin-brs.svg)](https://david-dm.org/RokuRoad/eslint-plugin-brs)
 
 The ESLint custom plugin with rules and parser for `.brs` files.
 
 
 ### ESLint plugin for BrightScript
 
-We going to skip the part why linting is important so you can read more about it at ESLint https://eslint.org/docs/about/ site.
+We going to skip the part why linting is important so you can read more about it at [ESLint](https://eslint.org/docs/about) site. Primary motivation for this development is absence of reliable tools for Roku development (at least at the time this work started) and performance criteria.
+
+
+*Latest tests gave measurement of about 14 seconds for a 1000 files of BrightScript*
 
 This plugin provides parsing and linting tool for your Roku project. While ESLint rules for Javascript are not 1 to 1 replaceable you are able to quickly develop or translate any other rules to work with brightscript. It's written in typescript but could use any JS- technology you like
 
 
-This project depends on parser implementation for BrightScript -- @roku-road/bright
+### Installation
+
+You'll first need to install [ESLint](http://eslint.org):
+
+**With Yarn**
+
+```bash
+yarn add --dev eslint
+```
+
+**With npm**
+
+```bash
+$ npm i eslint --save-dev
+```
+
+Next, install `eslint-plugin-brs`:
+
+**With Yarn**
+```bash
+yarn add --dev eslint-plugin-brs
+```
+
+**With npm**
+```bash
+$ npm install eslint-plugin-brs --save-dev
+```
+
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-brs` globally.
+
+
+
+## Plugin-Provided Rules
 
 
 ### Parsing and AST
