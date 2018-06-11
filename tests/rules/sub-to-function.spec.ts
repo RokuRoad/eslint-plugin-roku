@@ -1,15 +1,11 @@
-import { RuleTester } from 'eslint'
-import { invalidFactory, validFactory } from '../helpers'
-
-const ruleTester = new RuleTester()
-import * as rule from '../../src/rules/sub-to-function'
+import { invalidFactory, runTest, validFactory } from '../helpers'
 
 const RULE_NAME = 'sub-to-function'
 
 const valid = validFactory(RULE_NAME, '', '')
 const invalid = invalidFactory(RULE_NAME, '', '')
 
-export const tests = {
+runTest(RULE_NAME, {
   invalid: [
     [
       `sub a() as Dynamic
@@ -24,15 +20,4 @@ export const tests = {
      end sub
   `
   ].map(valid)
-}
-
-describe(RULE_NAME, () => {
-  it('Should exist', () => {
-    expect(rule.meta).toBeTruthy()
-    expect(rule.meta.docs).toBeTruthy()
-    expect(rule.meta.docs.description).toBeTruthy()
-    expect(rule.create).toBeTruthy()
-  })
-
-  ruleTester.run(RULE_NAME, rule, tests)
 })

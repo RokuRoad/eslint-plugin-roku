@@ -14,7 +14,5 @@ jobs:
           key: v1-dependencies-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
-      - run: yarn link
-      - run: yarn link "@roku-road/eslint-plugin-rules"
       - run: yarn build
       - run: yarn test

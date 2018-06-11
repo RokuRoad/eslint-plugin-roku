@@ -1,17 +1,17 @@
 import { CLIEngine } from 'eslint'
 import { resolve } from 'path'
 
-import { configs, parseForESLint, version } from '../src/index'
-
-const conf = configs.recommended
+import { parseForESLint, rules, version } from '../src/index'
 
 const cli = new CLIEngine({
+  cwd: resolve(__dirname, 'assets'),
   extensions: [ '.brs' ],
-  ...conf,
+  parser: '../src',
+  rules,
   useEslintrc: false
 })
 
-describe.only('Plugin', () => {
+describe('Plugin', () => {
   it(`Should be able to use plugin v${version}`, () => {
     const output = cli.executeOnFiles([ resolve(__dirname, 'assets') + '/*.brs' ])
 
@@ -25,10 +25,10 @@ describe.only('Plugin', () => {
     expect(parsed.visitorKeys).toMatchSnapshot('test1-keys')
   })
 
-  it.skip('Should be able to run multiple source files', () => {
-    const output = cli.executeOnFiles([ resolve(__dirname, 'assets') + '/**/*.brs' ])
+  it('Should be able to run multiple source files', () => {
+    const output = cli.executeOnFiles([ '**/*.brs' ])
 
-    // console.log(output);
+    // console.log(output.results)
 
     expect(output).toBeTruthy()
   })

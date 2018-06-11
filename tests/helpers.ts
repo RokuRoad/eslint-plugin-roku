@@ -1,8 +1,11 @@
 import { RuleTester } from 'eslint'
+import { join, resolve } from 'path'
 
 RuleTester.it = (text, method) => test('Valid/Invalid test', method)
 
 const ruleTester = new RuleTester()
+
+const parser = resolve(join(__dirname, '../src'))
 
 export const runTest = (ruleName: string, tests) => {
   const rule = require(`../src/rules/${ruleName}`)
@@ -23,7 +26,7 @@ export const validFactory = (name: string, head = `function validFactory()`, tai
   code: `${head}\n${source}\n${tail}`,
   filename: `${name}.brs`,
   options: [],
-  parser: '@roku-road/eslint-plugin-rules'
+  parser
 })
 
 export const invalidFactory = (name: string, head = `function invalidFactory()`, tail = `end function`) => (
@@ -33,11 +36,11 @@ export const invalidFactory = (name: string, head = `function invalidFactory()`,
   errors,
   filename: `${name}.brs`,
   options: [],
-  parser: '@roku-road/eslint-plugin-rules'
+  parser
 })
 
-describe('Helpers', () => {
-  it('Should provide factories', () => {
+describe.skip('Helpers', () => {
+  it.skip('Should provide factories', () => {
     expect(validFactory).toBeTruthy()
     expect(invalidFactory).toBeTruthy()
 
