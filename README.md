@@ -1,6 +1,7 @@
 [![npm version](https://img.shields.io/npm/v/@roku-road/eslint-plugin-brs.svg)](https://www.npmjs.com/package/@roku-road/eslint-plugin-brs)
 [![Downloads/month](https://img.shields.io/npm/dm/@roku-road/eslint-plugin-brs.svg)](http://www.npmtrends.com/@roku-road/eslint-plugin-brs)
 [![Build Status](https://travis-ci.com/RokuRoad/eslint-plugin-brs.svg?branch=master)](https://travis-ci.com/RokuRoad/eslint-plugin-brs)
+[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg?style=for-the-badge)](https://github.com/RokuRoad/eslint-plugin-brs)
 [![Coverage Status](https://codecov.io/gh/RokuRoad/eslint-plugin-brs/branch/master/graph/badge.svg)](https://codecov.io/gh/RokuRoad/eslint-plugin-brs)
 [![Dependency Status](https://david-dm.org/RokuRoad/eslint-plugin-brs.svg)](https://david-dm.org/RokuRoad/eslint-plugin-brs)
 
@@ -33,19 +34,19 @@ yarn add --dev eslint
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-brs`:
+Next, install `@roku-road/eslint-plugin-brs`:
 
 **With Yarn**
 ```bash
-yarn add --dev eslint-plugin-brs
+yarn add --dev @roku-road/eslint-plugin-brs
 ```
 
 **With npm**
 ```bash
-$ npm install eslint-plugin-brs --save-dev
+$ npm install @roku-road/eslint-plugin-brs --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-brs` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@roku-road/eslint-plugin-brs` globally.
 
 
 
