@@ -1,23 +1,22 @@
 import { ast, visitorKeys } from '@roku-road/bright'
 
-export const version = require('../package.json').version
+// tslint:disable-next-line:no-var-requires
+const { name, version } = require('../package.json')
 
-const warnings = [
-  /*  'no-print' */
-]
-const errors = [ 'no-stop', 'function-no-return', 'sub-to-function' ]
+const warnings = [ 'no-print', 'function-no-return', 'sub-to-function' ]
+const errors = [ 'no-stop' ]
 
 const allRules = [ ...warnings, ...errors ].sort()
 
 const makeRules = () => {
   const mapped = {}
 
-  allRules.map((name) => (mapped[name] = require(`./rules/${name}`)))
+  allRules.map((rule) => (mapped[rule] = require(`./rules/${rule}`)))
 
   return mapped
 }
 
-const addRule = (level = 'warn', mapped = {}) => (name) => (mapped[`@roku-road/rules/${name}`] = level)
+const addRule = (level = 'warn', mapped = {}) => (rule) => (mapped[`roku/${rule}`] = level)
 
 const ruleConfig = () => {
   const mapped = {}
@@ -42,10 +41,10 @@ const parseForESLint = (code: string) => {
 
 const configs = {
   recommended: {
-    parser: '@roku-road/eslint-plugin-rules',
-    plugins: [ '@roku-road/rules' ],
+    parser: name,
+    plugins: [ 'roku' ],
     rules: ruleConfig()
   }
 }
 
-export { configs, rules, parseForESLint }
+export { configs, rules, parseForESLint, version }

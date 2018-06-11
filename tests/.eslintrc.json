@@ -1,0 +1,4 @@
+{
+  "extends": "plugin:roku/recommended",
+  "rules": { "indent": 0 }
+}

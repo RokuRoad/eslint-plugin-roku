@@ -39,24 +39,24 @@ export const invalidFactory = (name: string, head = `function invalidFactory()`,
   parser
 })
 
-describe.skip('Helpers', () => {
-  it.skip('Should provide factories', () => {
-    expect(validFactory).toBeTruthy()
-    expect(invalidFactory).toBeTruthy()
+// describe.skip('Helpers', () => {
+//   it('Should provide factories', () => {
+//     expect(validFactory).toBeTruthy()
+//     expect(invalidFactory).toBeTruthy()
 
-    expect(validFactory('helpers')('')).toEqual({
-      code: 'function validFactory()\n\nend function',
-      filename: 'helpers.brs',
-      options: [],
-      parser: '@roku-road/eslint-plugin-rules'
-    })
+//     expect(validFactory('helpers')('')).toEqual({
+//       code: 'function validFactory()\n\nend function',
+//       filename: 'helpers.brs',
+//       options: [],
+//       parser
+//     })
 
-    expect(invalidFactory('helpers')([ '', [] ])).toEqual({
-      code: 'function invalidFactory()\n\nend function',
-      errors: [],
-      filename: 'helpers.brs',
-      options: [],
-      parser: '@roku-road/eslint-plugin-rules'
-    })
-  })
-})
+//     expect(invalidFactory('helpers')([ '', [] ])).toEqual({
+//       code: 'function invalidFactory()\n\nend function',
+//       errors: [],
+//       filename: 'helpers.brs',
+//       options: [],
+//       parser
+//     })
+//   })
+// })

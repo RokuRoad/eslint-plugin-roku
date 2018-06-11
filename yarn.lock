@@ -34,9 +34,9 @@
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
 
-"@types/jest@23.0.0":
-  version "23.0.0"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.0.0.tgz#760cac74f00bb9c3075587716d2b3b4435663bc0"
+"@types/jest@23.0.1":
+  version "23.0.1"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.0.1.tgz#c60dbed0bac210343d5dd0413744d6c8d0afac47"
 
 "@types/json-schema@*":
   version "6.0.1"
@@ -953,6 +953,12 @@ escodegen@^1.9.0:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.6.1"
+
+eslint-plugin-roku@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-roku/-/eslint-plugin-roku-0.5.5.tgz#3752bbafd9058fae33da6db89d78b72ddc6d1075"
+  dependencies:
+    "@roku-road/bright" "0.5.0"
 
 eslint-scope@^3.7.1:
   version "3.7.1"

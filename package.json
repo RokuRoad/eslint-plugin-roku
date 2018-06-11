@@ -1,8 +1,8 @@
 {
   "license": "MIT",
-  "name": "@roku-road/eslint-plugin-brs",
-  "repository": "git@github.com:RokuRoad/eslint-plugin-brs.git",
-  "version": "0.5.3",
+  "name": "eslint-plugin-roku",
+  "repository": "git@github.com:RokuRoad/eslint-plugin-roku.git",
+  "version": "0.5.6",
   "description": "The ESLint custom plugin with rules and parser for .brs files",
   "keywords": [
     "eslint",
@@ -16,7 +16,10 @@
   ],
   "author": "Igor Alpert",
   "main": "dist/index.js",
-  "files": [ "dist/rules", "dist/index.js", "dist/index.d.ts" ],
+  "files": [
+    "dist/rules",
+    "dist/index.js"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -28,11 +31,12 @@
     "eslint": "4.19.1"
   },
   "dependencies": {
-    "@roku-road/bright": "^0.5.0"
+    "@roku-road/bright": "0.5.0",
+    "eslint-plugin-roku": "^0.5.5"
   },
   "devDependencies": {
     "@types/eslint": "4.16.2",
-    "@types/jest": "23.0.0",
+    "@types/jest": "23.0.1",
     "@types/node": "^10.3.2",
     "eslint": "4.19.1",
     "jest": "23.1.0",
