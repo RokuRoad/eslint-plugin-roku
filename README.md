@@ -13,6 +13,7 @@ The ESLint custom plugin with rules and parser for `.brs` files.
 
 We going to skip the part why linting is important so you can read more about it at [ESLint](https://eslint.org/docs/about) site. Primary motivation for this development is absence of reliable tools for Roku development (at least at the time this work started) and performance criteria.
 
+![Demo](https://github.com/RokuRoad/eslint-plugin-roku/blob/master/docs/demo.gif)
 
 *Latest tests gave measurement of about 14 seconds for a 1000 files of BrightScript*
 
