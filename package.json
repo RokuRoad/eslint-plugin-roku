@@ -31,8 +31,7 @@
     "eslint": "4.19.1"
   },
   "dependencies": {
-    "@roku-road/bright": "0.5.0",
-    "eslint-plugin-roku": "^0.5.5"
+    "@roku-road/bright": "0.5.1"
   },
   "devDependencies": {
     "@types/eslint": "4.16.2",
