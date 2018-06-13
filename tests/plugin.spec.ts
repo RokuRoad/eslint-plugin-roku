@@ -15,7 +15,7 @@ const settings = {
 }
 
 const cli = new CLIEngine(settings)
-const formatter = cli.getFormatter('stylish')
+// const formatter = cli.getFormatter('stylish')
 
 describe('Plugin', () => {
   it(`Should be able to use plugin v${PLUGIN.version}`, () => {
@@ -33,7 +33,7 @@ describe('Plugin', () => {
     expect(parsed.visitorKeys).toBeTruthy()
   })
 
-  it('Should be able to run multiple source files', () => {
+  it.skip('Should be able to run multiple source files', () => {
     const output = cli.executeOnFiles([ resolve(__dirname, 'assets') + '/**/*.brs' ])
 
     //  console.log(output.results[0])

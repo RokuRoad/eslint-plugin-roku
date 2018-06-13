@@ -16,9 +16,9 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@roku-road/bright@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-0.5.0.tgz#5b4e5ba31a2f2aeeeab36142d3f04da7a9d51237"
+"@roku-road/bright@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-0.5.1.tgz#a270c65453bf8179f4469bbcc20cef3177ebb5da"
   dependencies:
     chevrotain "3.5.0"
     lodash "4.17.10"
@@ -34,9 +34,9 @@
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
 
-"@types/jest@23.0.1":
-  version "23.0.1"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.0.1.tgz#c60dbed0bac210343d5dd0413744d6c8d0afac47"
+"@types/jest@23.0.2":
+  version "23.0.2"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.0.2.tgz#f03f9e6dd2206cc2a2e8fd033161b0b7cf905db6"
 
 "@types/json-schema@*":
   version "6.0.1"
@@ -953,12 +953,6 @@ escodegen@^1.9.0:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.6.1"
-
-eslint-plugin-roku@^0.5.5:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-roku/-/eslint-plugin-roku-0.5.5.tgz#3752bbafd9058fae33da6db89d78b72ddc6d1075"
-  dependencies:
-    "@roku-road/bright" "0.5.0"
 
 eslint-scope@^3.7.1:
   version "3.7.1"

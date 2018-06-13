@@ -1,7 +1,7 @@
 import { RuleTester } from 'eslint'
 import { join, resolve } from 'path'
 
-RuleTester.it = (text, method) => test('Valid/Invalid test', method)
+RuleTester.it = (text, method) => test(text.replace(/\n+/g, ' '), method)
 
 const ruleTester = new RuleTester()
 
@@ -38,25 +38,3 @@ export const invalidFactory = (name: string, head = `function invalidFactory()`,
   options: [],
   parser
 })
-
-// describe.skip('Helpers', () => {
-//   it('Should provide factories', () => {
-//     expect(validFactory).toBeTruthy()
-//     expect(invalidFactory).toBeTruthy()
-
-//     expect(validFactory('helpers')('')).toEqual({
-//       code: 'function validFactory()\n\nend function',
-//       filename: 'helpers.brs',
-//       options: [],
-//       parser
-//     })
-
-//     expect(invalidFactory('helpers')([ '', [] ])).toEqual({
-//       code: 'function invalidFactory()\n\nend function',
-//       errors: [],
-//       filename: 'helpers.brs',
-//       options: [],
-//       parser
-//     })
-//   })
-// })
