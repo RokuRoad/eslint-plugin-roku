@@ -19,6 +19,7 @@ script:
   - npm install codecov -g
   - yarn run coverage
   - yarn run build
+  - yarn run release
 
 after_success:
   - codecov
