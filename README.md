@@ -20,6 +20,22 @@ We going to skip the part why linting is important so you can read more about it
 This plugin provides parsing and linting tool for your Roku project. While ESLint rules for Javascript are not 1 to 1 replaceable you are able to quickly develop or translate any other rules to work with brightscript. It's written in typescript but could use any JS- technology you like
 
 
+### VSCode Integration
+
+``` json
+    "eslint.validate": [   {
+        "language": "brightscript",
+        "autoFix": false
+    } ],
+```
+
+##### Linter Warnings
+![Warnings](https://github.com/RokuRoad/eslint-plugin-roku/blob/master/docs/eslint3.png)
+
+#### Syntax Errors
+
+![Syntax](https://github.com/RokuRoad/eslint-plugin-roku/blob/master/docs/vscode_eslint2.png)
+
 ### Installation
 
 You'll first need to install [ESLint](http://eslint.org):
