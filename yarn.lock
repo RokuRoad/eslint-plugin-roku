@@ -40,9 +40,9 @@
     node-fetch "^2.1.1"
     url-template "^2.0.8"
 
-"@roku-road/bright@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-1.0.4.tgz#3c0d9b4e763e7eade34db6c6e46f62340db308a7"
+"@roku-road/bright@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-1.1.0.tgz#80e7a36c219a41bb4b0f6f43d10475aea7e96916"
   dependencies:
     chevrotain "3.5.0"
     lodash "4.17.10"
