@@ -6,7 +6,7 @@ import * as PLUGIN from '../src/index'
 const parser = resolve(join(__dirname, '../src'))
 
 const settings = {
-  extensions: [ '.brs' ],
+  extensions: ['.brs'],
   parser,
   plugins: PLUGIN.configs.recommended.plugins,
   rules: PLUGIN.configs.recommended.rules,
@@ -19,7 +19,7 @@ const cli = new CLIEngine(settings)
 
 describe('Plugin', () => {
   it(`Should be able to use plugin v${PLUGIN.version}`, () => {
-    const output = cli.executeOnFiles([ resolve(__dirname, 'assets') + '/*.brs' ])
+    const output = cli.executeOnFiles([resolve(__dirname, 'assets') + '/*.brs'])
 
     // console.log(formatter(output.results))
 
@@ -33,8 +33,8 @@ describe('Plugin', () => {
     expect(parsed.visitorKeys).toBeTruthy()
   })
 
-  it.skip('Should be able to run multiple source files', () => {
-    const output = cli.executeOnFiles([ resolve(__dirname, 'assets') + '/**/*.brs' ])
+  it('Should be able to run multiple source files', () => {
+    const output = cli.executeOnFiles([resolve(__dirname, 'assets') + '/**/*.brs'])
 
     //  console.log(output.results[0])
     // console.log(formatter(output.results))
