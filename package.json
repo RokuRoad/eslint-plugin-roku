@@ -32,15 +32,15 @@
     "eslint": "4.19.1"
   },
   "dependencies": {
-    "@roku-road/bright": "1.1.0"
+    "@roku-road/bright": "1.2.3"
   },
   "devDependencies": {
-    "semantic-release": "15.5.4",
     "@types/eslint": "4.16.2",
     "@types/jest": "23.1.0",
     "@types/node": "^10.3.3",
     "eslint": "4.19.1",
     "jest": "23.1.0",
+    "semantic-release": "15.5.4",
     "ts-jest": "22.4.6",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
