@@ -29,18 +29,18 @@
     "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
   },
   "peerDependencies": {
-    "eslint": "4.19.1"
+    "eslint": "5.0.0"
   },
   "dependencies": {
-    "@roku-road/bright": "1.2.3"
+    "@roku-road/bright": "1.2.6"
   },
   "devDependencies": {
     "@types/eslint": "4.16.2",
-    "@types/jest": "23.1.0",
-    "@types/node": "^10.3.3",
-    "eslint": "4.19.1",
+    "@types/jest": "23.1.1",
+    "@types/node": "^10.3.5",
+    "eslint": "5.0.0",
     "jest": "23.1.0",
-    "semantic-release": "15.5.4",
+    "semantic-release": "15.6.0",
     "ts-jest": "22.4.6",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
@@ -48,6 +48,6 @@
     "weallcontribute": "1.0.8"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=9.10.0"
   }
 }
