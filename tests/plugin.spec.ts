@@ -21,7 +21,7 @@ describe('Plugin', () => {
   it(`Should be able to use plugin v${PLUGIN.version}`, () => {
     const output = cli.executeOnFiles([resolve(__dirname, 'assets') + '/*.brs'])
 
-    // console.log(formatter(output.results))
+    console.log(formatter(output.results))
 
     expect(output).toBeTruthy()
   })
@@ -33,7 +33,7 @@ describe('Plugin', () => {
     expect(parsed.visitorKeys).toBeTruthy()
   })
 
-  it('Should be able to run multiple source files', () => {
+  it.skip('Should be able to run multiple source files', () => {
     const output = cli.executeOnFiles([resolve(__dirname, 'assets') + '/**/*.brs'])
 
     //  console.log(output.results[0])
