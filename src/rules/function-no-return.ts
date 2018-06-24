@@ -28,7 +28,7 @@ const meta: Rule.RuleMetaData = {
 const create = (context: Rule.RuleContext) => {
   return {
     FunctionDeclaration(node) {
-      const { id, ReturnType, body, loc } = node
+      const { id, ReturnType, body } = node
       const name = id.name
       const type = ReturnType && ReturnType.value.toLowerCase()
       let messageId = null
