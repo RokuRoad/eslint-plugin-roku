@@ -17,7 +17,6 @@ const create = (context: Rule.RuleContext) => {
     StopStatement(node) {
       context.report({
         data: { statement: 'stop' },
-        loc: node.loc,
         messageId: 'unexpected',
         node
       })

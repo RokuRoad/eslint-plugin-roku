@@ -10,12 +10,11 @@ const settings = {
   parser,
   plugins: PLUGIN.configs.recommended.plugins,
   rules: PLUGIN.configs.recommended.rules,
-  // rules: ,
   useEslintrc: false
 }
 
 const cli = new CLIEngine(settings)
-// const formatter = cli.getFormatter('stylish')
+const formatter = cli.getFormatter('stylish')
 
 describe('Plugin', () => {
   it(`Should be able to use plugin v${PLUGIN.version}`, () => {

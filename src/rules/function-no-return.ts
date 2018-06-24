@@ -57,7 +57,6 @@ const create = (context: Rule.RuleContext) => {
             name,
             type
           },
-          loc,
           messageId,
           node
         })

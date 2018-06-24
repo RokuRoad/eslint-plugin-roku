@@ -17,7 +17,6 @@ const create = (context: Rule.RuleContext) => {
     PrintStatement(node) {
       context.report({
         data: { statement: 'print' },
-        loc: node.loc,
         messageId: 'unexpected',
         node
       })

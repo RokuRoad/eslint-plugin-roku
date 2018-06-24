@@ -3,20 +3,20 @@ import { ast, visitorKeys } from '@roku-road/bright'
 // tslint:disable-next-line:no-var-requires
 const { name, version } = require('../package.json')
 
-const warnings = [ 'no-print', 'function-no-return', 'sub-to-function' ]
-const errors = [ 'no-stop' ]
+const warnings = ['no-print', 'function-no-return', 'sub-to-function']
+const errors = ['no-stop']
 
-const allRules = [ ...warnings, ...errors ].sort()
+const allRules = [...warnings, ...errors].sort()
 
 const makeRules = () => {
   const mapped = {}
 
-  allRules.map((rule) => (mapped[rule] = require(`./rules/${rule}`)))
+  allRules.map(rule => (mapped[rule] = require(`./rules/${rule}`)))
 
   return mapped
 }
 
-const addRule = (level = 'warn', mapped = {}) => (rule) => (mapped[`roku/${rule}`] = level)
+const addRule = (level = 'warn', mapped = {}) => rule => (mapped[`roku/${rule}`] = level)
 
 const ruleConfig = () => {
   const mapped = {}
@@ -42,7 +42,7 @@ const parseForESLint = (code: string) => {
 const configs = {
   recommended: {
     parser: name,
-    plugins: [ 'roku' ],
+    plugins: ['roku'],
     rules: ruleConfig()
   }
 }

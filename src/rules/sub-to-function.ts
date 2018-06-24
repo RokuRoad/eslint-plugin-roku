@@ -32,7 +32,6 @@ const create = (context: Rule.RuleContext) => {
             name,
             type
           },
-          loc: node.ReturnType.loc,
           messageId: 'noReturn',
           node
         })
