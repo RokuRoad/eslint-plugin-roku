@@ -32,7 +32,7 @@
     "eslint": "5.0.0"
   },
   "dependencies": {
-    "@roku-road/bright": "1.2.7"
+    "@roku-road/bright": "1.2.8"
   },
   "devDependencies": {
     "@types/eslint": "4.16.3",
