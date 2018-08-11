@@ -23,7 +23,7 @@ const create = (context: Rule.RuleContext) => {
     IfStatement(node) {
 
       // We grab 2 tokens before If body to check if one of them is THEN
-      const tokens = context.getTokensBefore(node.consequent, 2)
+      const tokens = (context as any).getTokensBefore(node.consequent, 2)
 
       // usually THEN will be either last token or the one before NEWLINE hence we want to check both
       const maybeThen = tokens.find((t) => t.type === 'THEN')
