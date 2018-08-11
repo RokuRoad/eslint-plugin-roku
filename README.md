@@ -1,7 +1,7 @@
 [![npm version](https://img.shields.io/npm/v/eslint-plugin-roku.svg)](https://www.npmjs.com/package/eslint-plugin-roku)
 [![Downloads/month](https://img.shields.io/npm/dm/eslint-plugin-roku.svg)](http://www.npmtrends.com/eslint-plugin-roku)
 [![Build Status](https://travis-ci.com/RokuRoad/eslint-plugin-roku.svg?branch=master)](https://travis-ci.com/RokuRoad/eslint-plugin-roku)
-[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg?style=for-the-badge)](https://github.com/RokuRoad/eslint-plugin-roku)
+[![CircleCI](https://img.shields.io/circleci/project/github/RokuRoad/eslint-plugin-roku.svg?style=for-the-badge)](https://github.com/RokuRoad/eslint-plugin-roku)
 [![Coverage Status](https://codecov.io/gh/RokuRoad/eslint-plugin-roku/branch/master/graph/badge.svg)](https://codecov.io/gh/RokuRoad/eslint-plugin-roku)
 [![Dependency Status](https://david-dm.org/RokuRoad/eslint-plugin-roku.svg)](https://david-dm.org/RokuRoad/eslint-plugin-roku) [![Greenkeeper badge](https://badges.greenkeeper.io/RokuRoad/eslint-plugin-roku.svg)](https://greenkeeper.io/)
 [![CodeFactor](https://www.codefactor.io/repository/github/rokuroad/eslint-plugin-roku/badge)](https://www.codefactor.io/repository/github/rokuroad/eslint-plugin-roku)
