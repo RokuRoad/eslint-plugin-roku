@@ -24,5 +24,6 @@
   "typeAcquisition": {
     "enable": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "preset": "ts-jest"
 }
