@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "name": "eslint-plugin-roku",
-  "repository": "git@github.com:evgygor/eslint-plugin-roku.git",
+  "repository": "git@github.com:RokuRoad/eslint-plugin-roku.git",
   "version": "1.0.1",
   "description": "The ESLint custom plugin with rules and parser for .brs files",
   "keywords": [
