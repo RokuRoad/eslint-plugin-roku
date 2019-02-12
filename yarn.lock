@@ -143,9 +143,10 @@
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
 
-"@types/jest@23.3.2":
-  version "23.3.2"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.2.tgz#07b90f6adf75d42c34230c026a2529e56c249dbb"
+"@types/jest@24.0.2":
+  version "24.0.2"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.2.tgz#a10ad017ee020b2dfa97655323dbf1f38f14f588"
+  integrity sha512-YCGS1XGfAnDLUy8IL7iZf+Tnl0jhnaWUhrx8H/WyaDnjsu9dQBO8jiQqgJi/4BEryY6gvaqf1OvB1B2BvsW4dg==
 
 "@types/json-schema@*":
   version "6.0.1"
