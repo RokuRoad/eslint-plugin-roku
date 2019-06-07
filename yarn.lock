@@ -5913,9 +5913,10 @@ wcwidth@^1.0.0:
   dependencies:
     defaults "^1.0.3"
 
-weallcontribute@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/weallcontribute/-/weallcontribute-1.0.8.tgz#91801eeb2b100678e844b720bdd87543c31cd90a"
+weallcontribute@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/weallcontribute/-/weallcontribute-1.0.9.tgz#4408a6969ea6290549a240af0a18d304c620b085"
+  integrity sha512-VQMH5fGoOogF652BRlp18q/3hDzu027iaCH1jqQmksVb0aLqnoYL0q3+T4K+OjLquBgOCijm9XUw0A1Da1CxGg==
   dependencies:
     hosted-git-info "^2.2.0"
     yargs "^6.6.0"
