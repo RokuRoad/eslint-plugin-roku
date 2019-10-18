@@ -41,7 +41,7 @@
     "eslint": "5.6.0",
     "jest": "23.6.0",
     "ts-jest": "23.10.1",
-    "semantic-release": "15.9.16",
+    "semantic-release": "15.13.27",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "typescript": "3.0.3",
