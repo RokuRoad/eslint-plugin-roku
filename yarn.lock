@@ -132,9 +132,10 @@
     into-stream "^3.1.0"
     lodash "^4.17.4"
 
-"@types/eslint@4.16.3":
-  version "4.16.3"
-  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-4.16.3.tgz#6ed2a9c68f73162fa57ba84582d63dcd8ee2d473"
+"@types/eslint@6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-6.1.5.tgz#1e1c0f6349504091a8bb71a8a38eb663d401f9ab"
+  integrity sha512-DDNhspp3xrOUnPQtHeuwqnAGEv6uLNjUPjKI6MUHh34iMHa8xu808YdVsCdyrB6q8ZSudZ5Hbhndt62/bwwUVA==
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"
