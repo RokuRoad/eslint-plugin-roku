@@ -1,26 +1,56 @@
-import { RuleTester } from "eslint";
-import { join, resolve } from "path";
+import { RuleTester } from 'eslint'
+import { join, resolve } from 'path'
 
-// RuleTester.run = (text, method) => test(text.replace(/\n+/g, ' '), method)
+// mock out the config validator because we want to test with inlineDisable option
+jest.mock('../node_modules/eslint/lib/config/config-validator', () => {
+  return {
+    // copied from source
+    getRuleOptionsSchema: rule => {
+      if (!rule) {
+        return null
+      }
+      const schema = rule.schema || (rule.meta && rule.meta.schema)
+      if (Array.isArray(schema)) {
+        if (schema.length) {
+          return {
+            type: 'array',
+            items: schema,
+            minItems: 0,
+            maxItems: schema.length,
+          }
+        }
+        return {
+          type: 'array',
+          minItems: 0,
+          maxItems: 0,
+        }
+      }
+      return schema || null
+    },
+    // noop
+    validate: () => {},
+  }
+})
+const ruleTester = new RuleTester({
+  allowInlineConfig: true,
+})
 
-const ruleTester = new RuleTester();
-
-const parser = resolve(join(__dirname, "../src"));
+const parser = resolve(join(__dirname, '../src'))
 
 export const runTest = (ruleName: string, tests) => {
-  const rule = require(`../src/rules/${ruleName}`);
+  const rule = require(`../src/rules/${ruleName}`)
 
   describe(ruleName, () => {
-    it("Should exist", () => {
-      expect(rule.meta).toBeTruthy();
-      expect(rule.meta.docs).toBeTruthy();
-      expect(rule.meta.docs.description).toBeTruthy();
-      expect(rule.create).toBeTruthy();
-    });
+    it('Should exist', () => {
+      expect(rule.meta).toBeTruthy()
+      expect(rule.meta.docs).toBeTruthy()
+      expect(rule.meta.docs.description).toBeTruthy()
+      expect(rule.create).toBeTruthy()
+    })
 
-    ruleTester.run(ruleName, rule, tests);
-  });
-};
+    ruleTester.run(ruleName, rule, tests)
+  })
+}
 
 export const validFactory = (
   name: string,
@@ -30,8 +60,8 @@ export const validFactory = (
   code: `${head}\n${source}\n${tail}`,
   filename: `${name}.brs`,
   options: [],
-  parser
-});
+  parser,
+})
 
 export const invalidFactory = (
   name: string,
@@ -42,5 +72,5 @@ export const invalidFactory = (
   errors,
   filename: `${name}.brs`,
   options: [],
-  parser
-});
+  parser,
+})

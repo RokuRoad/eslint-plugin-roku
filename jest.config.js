@@ -1,18 +1,15 @@
-const path = require("path");
+const path = require('path')
 
 module.exports = {
-  transform: {
-    "^.+\\.tsx?$": "ts-jest"
-  },
-  testRegex: "(/test/.*|(\\.|/)(test|spec))\\.tsx?$",
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  testMatch: undefined,
+  testRegex: '(/test/.*|(\\.|/)(test|spec))\\.tsx?$',
   verbose: true,
   bail: true,
-  collectCoverageFrom: ["src/**/*.ts", "!src/**/*.d.ts"],
+  collectCoverageFrom: ['src/**/*.ts', '!src/**/*.d.ts'],
   globals: {
-    "ts-jest": {
-      tsConfigFile: path.resolve(path.join(__dirname, "tsconfig.jest.json")),
-      skipBabel: true
-    }
-  }
-};
+    'ts-jest': {
+      tsConfig: path.resolve(__dirname, './tsconfig.jest.json'),
+    },
+  },
+  preset: 'ts-jest',
+}
