@@ -28,7 +28,7 @@ jest.mock('../node_modules/eslint/lib/config/config-validator', () => {
       return schema || null
     },
     // noop
-    validate: () => {},
+    validate: () => undefined,
   }
 })
 const ruleTester = new RuleTester({

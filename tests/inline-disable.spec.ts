@@ -1,4 +1,4 @@
-import { invalidFactory, runTest, validFactory } from '../helpers'
+import { invalidFactory, runTest, validFactory } from './helpers'
 
 const RULE_NAME = 'no-print'
 
