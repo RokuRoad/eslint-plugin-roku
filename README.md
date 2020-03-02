@@ -36,6 +36,17 @@ This plugin provides parsing and linting tool for your Roku project. While ESLin
 
 ![Syntax](https://github.com/RokuRoad/eslint-plugin-roku/blob/master/docs/vscode_eslint2.png)
 
+### Disable rules with comments
+```
+? "this is a valid log" ' eslint-disable-line
+```
+or 
+```
+' eslint-disable-next-line [rule]
+? "this is a valid log"
+```
+note: whole file `eslint-disable` does not work as there is no block quote in brightscript
+
 ### Installation
 
 You'll first need to install [ESLint](http://eslint.org):
