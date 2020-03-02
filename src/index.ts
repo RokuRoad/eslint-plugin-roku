@@ -30,12 +30,26 @@ const ruleConfig = () => {
 const rules = makeRules()
 
 const parseForESLint = (code: string) => {
+  const result = ast(code)
+
   return {
-    ast: ast(code),
+    ast: {
+      ...result,
+      comments: result.tokens
+        .filter(t => t.type.startsWith('COMMENT'))
+        .map(comment => {
+          return {
+            ...comment,
+            type: 'Line',
+            value: comment.value.replace(/'|REM/i, ''),
+          }
+        }),
+      tokens: result.tokens.filter(t => !t.type.startsWith('COMMENT') && t.type !== 'NEWLINE'),
+    },
     code,
     scopeManager: null,
     services: {},
-    visitorKeys
+    visitorKeys,
   }
 }
 
@@ -43,8 +57,8 @@ const configs = {
   recommended: {
     parser: name,
     plugins: ['roku'],
-    rules: ruleConfig()
-  }
+    rules: ruleConfig(),
+  },
 }
 
 export { configs, rules, parseForESLint, version }
