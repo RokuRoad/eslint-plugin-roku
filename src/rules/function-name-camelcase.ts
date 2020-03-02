@@ -21,21 +21,24 @@ const meta: Rule.RuleMetaData = {
 }
 
 const create = (context: Rule.RuleContext) => {
-  return {
-    FunctionDeclaration(node) {
-      const { id } = node
-      const { name } = id
+  function testName(node) {
+    const { id } = node
+    const { name } = id
 
-      if (!CAMLECASE_PATTERN.test(name)) {
-        context.report({
-          data: {
-            name,
-          },
-          messageId: 'invalid',
-          node,
-        })
-      }
-    },
+    if (!CAMLECASE_PATTERN.test(name)) {
+      context.report({
+        data: {
+          name,
+        },
+        messageId: 'invalid',
+        node,
+      })
+    }
+  }
+
+  return {
+    FunctionDeclaration: testName,
+    SubDeclaration: testName,
   }
 }
 

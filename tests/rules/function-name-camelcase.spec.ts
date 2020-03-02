@@ -22,6 +22,11 @@ export const test = runTest(RULE_NAME, {
       end function`,
       [{ messageId: 'invalid' }],
     ],
+    [
+      `sub snake_case() as Dynamic
+      end sub`,
+      [{ messageId: 'invalid' }],
+    ],
   ].map(invalid),
   valid: [
     `function asdfj098() as Dynamic
@@ -43,6 +48,10 @@ export const test = runTest(RULE_NAME, {
     `function aNormalFunction() as Dynamic
       return a
     end function
+    `,
+    `sub aNormalFunction() as Dynamic
+      return a
+    end sub
     `,
   ].map(valid),
 })
