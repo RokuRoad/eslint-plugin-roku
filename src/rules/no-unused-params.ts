@@ -7,16 +7,16 @@ import { Rule, Scope } from 'eslint'
 
 const meta: Rule.RuleMetaData = {
   docs: {
-    category: 'Stylistic Issues',
-    description: 'Check that `Function` with defined return type has RETURN statements',
+    category: 'Possible Errors',
+    description: 'Check that all function paremeters are referenced',
     recommended: true,
-    url: 'https://www.rokuroad.com/docs/rules/sub-to-function'
   },
   fixable: 'code',
   messages: {
-    UNUSED: 'Parameter {{name}} in function {{functionName}} is not used'
+    UNUSED:
+      'Parameter {{name}} in function {{functionName}} is not used. Consider removing it if it is not needed.',
   },
-  schema: []
+  schema: [],
 }
 
 function findAllRefs(scope: Scope.Scope): Scope.Reference[] {
@@ -40,10 +40,10 @@ const create = (context: Rule.RuleContext) => {
             name: node.name.name,
           },
           messageId: 'UNUSED',
-          node
+          node,
         })
       }
-    }
+    },
   }
 }
 

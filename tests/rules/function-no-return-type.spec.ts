@@ -11,9 +11,16 @@ export const test = runTest(RULE_NAME, {
       `function a()
         a = 5+5
       end function`,
-
-      [{ message: 'Function a needs a return type specified' }]
-    ]
+      [{ message: 'Function a needs a return type specified' }],
+      `function a() as object
+        return {
+          f: function()
+            return false
+          end function
+        }
+      end function`,
+      [{ message: 'Function {{name}} needs a return type specified' }],
+    ],
   ].map(invalid),
   valid: [
     `function a() as Dynamic
@@ -26,6 +33,14 @@ export const test = runTest(RULE_NAME, {
     end function`,
 
     `function voidFunction() as Void
-    end function`
-  ].map(valid)
+    end function`,
+
+    `function a() as object
+      return {
+        f: function() as boolean
+          return false
+        end function
+      }
+    end function`,
+  ].map(valid),
 })

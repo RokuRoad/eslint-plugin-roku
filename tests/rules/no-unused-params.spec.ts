@@ -11,16 +11,29 @@ export const test = runTest(RULE_NAME, {
       `function a(arg1, arg2) as Dynamic
       end function`,
 
-      [{ message: 'Parameter arg1 in function a is not used' },
-      { message: 'Parameter arg2 in function a is not used' }]
+      [
+        {
+          message:
+            'Parameter arg1 in function a is not used. Consider removing it if it is not needed.',
+        },
+        {
+          message:
+            'Parameter arg2 in function a is not used. Consider removing it if it is not needed.',
+        },
+      ],
     ],
     [
       `function a(value as string) as Dynamic
         a = { value: "value" }
       end function`,
 
-      [{ message: 'Parameter value in function a is not used' }]
-    ]
+      [
+        {
+          message:
+            'Parameter value in function a is not used. Consider removing it if it is not needed.',
+        },
+      ],
+    ],
   ].map(invalid),
   valid: [
     `function a(arg1, arg2) as Dynamic
@@ -36,10 +49,10 @@ export const test = runTest(RULE_NAME, {
 
     `function voidFunction(a) as Void
       obj = {
-        f: function() 
+        f: function()
           return a
         end function
       }
-    end function`
-  ].map(valid)
+    end function`,
+  ].map(valid),
 })

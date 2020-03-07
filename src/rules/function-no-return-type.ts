@@ -5,19 +5,17 @@
 
 import { Rule } from 'eslint'
 
-
 const meta: Rule.RuleMetaData = {
   docs: {
     category: 'Stylistic Issues',
-    description: 'Check that `Function` with defined return type has RETURN statements',
+    description: 'Check that `Function` has a return TYPE defined',
     recommended: true,
-    url: 'https://www.rokuroad.com/docs/rules/sub-to-function'
   },
   fixable: 'code',
   messages: {
-    NO_RETURN_TYPE: 'Function {{name}} needs a return type specified'
+    NO_RETURN_TYPE: 'Function {{name}} needs a return type specified',
   },
-  schema: []
+  schema: [],
 }
 
 const create = (context: Rule.RuleContext) => {
@@ -30,10 +28,10 @@ const create = (context: Rule.RuleContext) => {
             name: node.id.name,
           },
           messageId: 'NO_RETURN_TYPE',
-          node
+          node,
         })
       }
-    }
+    },
   }
 }
 
