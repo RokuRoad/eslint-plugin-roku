@@ -8,6 +8,8 @@
 
 The ESLint custom plugin with rules and parser for `.brs` files.
 
+[Sample Project](./sample)
+
 
 ### ESLint plugin for BrightScript
 
