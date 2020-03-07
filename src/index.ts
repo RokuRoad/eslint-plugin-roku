@@ -3,7 +3,15 @@ import { ast, visitorKeys } from '@roku-road/bright'
 // tslint:disable-next-line:no-var-requires
 const { name, version } = require('../package.json')
 
-const warnings = ['no-print', 'function-no-return', 'sub-to-function', 'no-shorthand-if']
+const warnings = [
+  'no-print',
+  'function-no-return',
+  'sub-to-function',
+  'no-shorthand-if',
+  'no-unused-params',
+  'function-no-return-type',
+  'function-name-camelcase',
+]
 const errors = ['no-stop']
 
 const allRules = [...warnings, ...errors].sort()

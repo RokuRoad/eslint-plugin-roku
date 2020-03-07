@@ -32,7 +32,6 @@
   },
   "include": [
     "src",
-    "tests/rules/function-no-return-type.spec.ts"
   ],
   "preset": "ts-jest"
 }

@@ -1,0 +1,12 @@
+{
+  "extends": "plugin:roku/recommended",
+  "rules": {
+    "roku/no-print": "warn",
+    "roku/no-stop": "warn",
+    "roku/sub-to-function": "warn",
+    "roku/function-no-return": "warn",
+    "roku/no-unused-params": "warn",
+    "roku/function-no-return-type": "warn",
+    "roku/function-name-camelcase": "warn"
+  }
+}

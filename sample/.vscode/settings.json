@@ -1,0 +1,7 @@
+{
+  "eslint.validate": [
+    "brighterscript"
+  ],
+  "npm.packageManager": "yarn",
+  "eslint.packageManager": "yarn"
+}

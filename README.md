@@ -84,10 +84,13 @@ $ npm install eslint-plugin-roku --save-dev
 {
   "extends": "plugin:roku/recommended",
   "rules": {
-    "roku/no-print": "warn",
+    "roku/no-print": "error",
     "roku/no-stop": "warn",
-    "roku/sub-to-function": "off",
-    "roku/function-no-return": "off"
+    "roku/sub-to-function": "warn",
+    "roku/function-no-return": "warn",
+    "roku/no-unused-params": "warn",
+    "roku/function-no-return-type": "warn",
+    "roku/function-name-camelcase": "warn"
   }
 }
 ```

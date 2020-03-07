@@ -1,9 +1,6 @@
 coverage
-assets
-coverage
 .DS_Store
 node_modules
 __snapshots__
-.vscode
 .idea
 dist
