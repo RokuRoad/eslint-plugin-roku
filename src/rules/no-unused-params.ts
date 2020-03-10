@@ -8,7 +8,7 @@ import { Rule, Scope } from 'eslint'
 const meta: Rule.RuleMetaData = {
   docs: {
     category: 'Possible Errors',
-    description: 'Check that all function paremeters are referenced',
+    description: 'Check that all function parameters are referenced',
     recommended: true,
   },
   fixable: 'code',
@@ -23,24 +23,41 @@ function findAllRefs(scope: Scope.Scope): Scope.Reference[] {
   let refs = []
   refs = refs.concat(scope.references)
   scope.childScopes.forEach(s => {
-    refs = findAllRefs(s)
+    refs = refs.concat(findAllRefs(s))
   })
   return refs
 }
 
 const create = (context: Rule.RuleContext) => {
   return {
-    Parameter(node) {
-      const scope = context.getScope()
-      const ref = findAllRefs(scope).find(r => r.identifier.name === node.name.name)
-      if (!ref) {
-        context.report({
-          data: {
-            functionName: (context.getScope().block as any).id.name,
-            name: node.name.name,
-          },
-          messageId: 'UNUSED',
-          node,
+    Identifier(node) {
+      if (node.parent && !['Property', 'Parameter', 'DotMemberExpression'].find(n => n === node.parent.type)) {
+        if (!context.getScope().references
+          .find(s => s.identifier.name === node.name && s.identifier.range[0] === node.range[0] && s.identifier.range[1] === node.range[1])) {
+          context.getScope().references.push({
+            from: context.getScope(),
+            identifier: node,
+          } as any)
+        }
+      }
+    },
+    'FunctionDeclaration:exit'(fn) {
+      if (fn.params && fn.params.args.length > 0) {
+        fn.params.args.forEach(node => {
+          const scope = context.getScope()
+          const ref = findAllRefs(scope).find(r => r.identifier.name === node.name.name)
+          const block = (context.getScope().block as { id?: { name: string } })
+          const functionName = block.id ? block.id.name : 'anonymous'
+          if (!ref) {
+            context.report({
+              data: {
+                functionName,
+                name: node.name.name,
+              },
+              messageId: 'UNUSED',
+              node,
+            })
+          }
         })
       }
     },

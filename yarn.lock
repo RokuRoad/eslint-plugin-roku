@@ -54,12 +54,13 @@
     node-fetch "^2.1.1"
     url-template "^2.0.8"
 
-"@roku-road/bright@1.2.11":
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-1.2.11.tgz#e34596b5f0d82ef766a79f6282f842050c392248"
+"@roku-road/bright@^1.2.13":
+  version "1.2.13"
+  resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-1.2.13.tgz#3eb38a1823dde38b38ceaaaaabb989ddee312373"
+  integrity sha512-uBcBlqNhq3jRpk+iG801EfrWopL4r1sqy2bxJIGG2OyAYEAULDP21QeEHyv6ePmXA/Iny8V297TC+nt98HCkMQ==
   dependencies:
     chevrotain "3.7.2"
-    lodash "4.17.11"
+    lodash "4.17.12"
 
 "@semantic-release/commit-analyzer@^6.0.0":
   version "6.0.0"
@@ -3408,9 +3409,10 @@ lodash.without@~4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.without/-/lodash.without-4.4.0.tgz#3cd4574a00b67bae373a94b748772640507b7aac"
 
-lodash@4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+lodash@4.17.12:
+  version "4.17.12"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.12.tgz#a712c74fdc31f7ecb20fe44f157d802d208097ef"
+  integrity sha512-+CiwtLnsJhX03p20mwXuvhoebatoh5B3tt+VvYlrPgZC1g36y+RRbkufX95Xa+X4I59aWEacDFYwnJZiyBh9gA==
 
 lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1:
   version "4.17.10"

@@ -34,6 +34,18 @@ export const test = runTest(RULE_NAME, {
         },
       ],
     ],
+    [
+      `function a(value as string) as Dynamic
+        a.value()
+      end function`,
+
+      [
+        {
+          message:
+            'Parameter value in function a is not used. Consider removing it if it is not needed.',
+        },
+      ],
+    ],
   ].map(invalid),
   valid: [
     `function a(arg1, arg2) as Dynamic
@@ -47,12 +59,22 @@ export const test = runTest(RULE_NAME, {
       return a
     end function`,
 
-    `function voidFunction(a) as Void
+    `function voidFunction(a, b, n) as Void
+      if b = 1 and true then
+
+      end if
       obj = {
-        f: function()
-          return a
+        f: function(section, fuck, d) as string
+          if a = 123 and d = m then
+           return m.get(section, fuck).cafd(n)
+          end if
         end function
       }
     end function`,
+    `
+    function onHideScores(v, x)
+        a().b().c(v)
+        a()[x]
+    end function`
   ].map(valid),
 })
