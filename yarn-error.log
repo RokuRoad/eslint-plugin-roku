@@ -1,37 +1,37 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Sheav\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js publish --dry-run
+  /Users/samuel.heavner/.nvm/versions/node/v13.6.0/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js publish
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Sheav\bin;C:\Users\Sheav\bin;C:\tools\cmder\bin;C:\Program Files\Git\bin;C:\tools\cmder\vendor\git-for-windows\mingw64\bin;C:\tools\cmder\vendor\git-for-windows\usr\local\bin;C:\tools\cmder\vendor\git-for-windows\usr\bin;C:\tools\cmder\vendor\git-for-windows\usr\bin;C:\tools\cmder\vendor\git-for-windows\mingw64\bin;C:\tools\cmder\vendor\git-for-windows\usr\bin;C:\Users\Sheav\bin;C:\tools\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\tools\cmder\vendor\conemu-maximus5;C:\tools\cmder\vendor\conemu-maximus5\ConEmu;C:\Python37\Scripts;C:\Python37;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\ProgramData\Boxstarter;C:\Program Files\Oculus\Support\oculus-runtime;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;D:\gstreamer\1.0\x86_64\bin;C:\ProgramData\chocolatey\bin;C:\tools\go\bin;C:\Program Files\Geth;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft Network Monitor 3;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\WIDCOMM\Bluetooth Software;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\DTS\Binn;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Sheav\.cargo\bin;C:\Users\Sheav\bin;C:\Users\Sheav\AppData\Roaming\cmder\bin;C:\Users\Sheav\AppData\Roaming\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\Sheav\AppData\Roaming\cmder\vendor\git-for-windows\cmd;C:\Users\Sheav\AppData\Roaming\cmder\vendor\conemu-maximus5;C:\Users\Sheav\AppData\Roaming\cmder\vendor\conemu-maximus5\ConEmu;C:\Users\Sheav\AppData\Local\Programs\Python\Python36\Scripts;C:\Users\Sheav\AppData\Local\Programs\Python\Python36;C:\Users\Sheav\scoop\shims;C:\Users\Sheav\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Sheav;C:\Users\Sheav\AppData\Local\Programs\Fiddler;C:\Users\Sheav\AppData\Local\atom\bin;C:\tools\cmder;C:\Users\Sheav\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sheav\AppData\Roaming\npm;C:\Users\Sheav\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1\bin;C:\Program Files (x86)\Nmap;C:\tools\cmder;C:\tools\cmder\vendor\git-for-windows\usr\bin\vendor_perl;C:\tools\cmder\vendor\git-for-windows\usr\bin\core_perl
+  /Users/samuel.heavner/.nvm/versions/node/v13.6.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/samuel.heavner/.nvm/versions/node/v13.6.0/bin:/Users/samuel.heavner/Downloads/google-cloud-sdk/bin
 
 Yarn version: 
-  1.17.3
+  1.21.1
 
 Node version: 
-  12.16.1
+  13.6.0
 
 Platform: 
-  win32 x64
+  darwin x64
 
 Trace: 
   Error: canceled
-      at Interface.<anonymous> (C:\Users\Sheav\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:136724:13)
-      at Interface.emit (events.js:311:20)
-      at Interface._ttyWrite (readline.js:893:16)
-      at ReadStream.onkeypress (readline.js:198:10)
-      at ReadStream.emit (events.js:311:20)
-      at emitKeys (internal/readline/utils.js:438:14)
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:136925:13)
+      at Interface.emit (events.js:321:20)
+      at Interface._ttyWrite (readline.js:881:16)
+      at ReadStream.onkeypress (readline.js:199:10)
+      at ReadStream.emit (events.js:321:20)
+      at emitKeys (internal/readline/utils.js:439:14)
       at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1160:36)
-      at ReadStream.emit (events.js:311:20)
-      at addChunk (_stream_readable.js:294:12)
+      at ReadStream.onData (readline.js:1149:36)
+      at ReadStream.emit (events.js:321:20)
+      at addChunk (_stream_readable.js:305:12)
 
 npm manifest: 
   {
     "license": "MIT",
     "name": "eslint-plugin-roku",
     "repository": "git@github.com:RokuRoad/eslint-plugin-roku.git",
-    "version": "1.0.1",
+    "version": "1.3.1",
     "description": "The ESLint custom plugin with rules and parser for .brs files",
     "keywords": [
       "eslint",
@@ -46,8 +46,7 @@ npm manifest:
     "author": "Igor Alpert",
     "main": "dist/index.js",
     "files": [
-      "dist/rules",
-      "dist/index.js"
+      "dist/"
     ],
     "scripts": {
       "build": "tsc",
@@ -61,16 +60,16 @@ npm manifest:
       "eslint": "5.6.0"
     },
     "dependencies": {
-      "@roku-road/bright": "1.2.11"
+      "@roku-road/bright": "^1.2.13"
     },
     "devDependencies": {
-      "@types/jest": "23.3.3",
       "@types/eslint": "4.16.3",
+      "@types/jest": "23.3.3",
       "@types/node": "^11.9.0",
       "eslint": "5.6.0",
       "jest": "23.6.0",
-      "ts-jest": "23.10.2",
       "semantic-release": "15.9.16",
+      "ts-jest": "23.10.2",
       "tslint": "^5.11.0",
       "tslint-config-prettier": "^1.15.0",
       "typescript": "3.0.3",
@@ -141,12 +140,13 @@ Lockfile:
       node-fetch "^2.1.1"
       url-template "^2.0.8"
   
-  "@roku-road/bright@1.2.11":
-    version "1.2.11"
-    resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-1.2.11.tgz#e34596b5f0d82ef766a79f6282f842050c392248"
+  "@roku-road/bright@^1.2.13":
+    version "1.2.13"
+    resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-1.2.13.tgz#3eb38a1823dde38b38ceaaaaabb989ddee312373"
+    integrity sha512-uBcBlqNhq3jRpk+iG801EfrWopL4r1sqy2bxJIGG2OyAYEAULDP21QeEHyv6ePmXA/Iny8V297TC+nt98HCkMQ==
     dependencies:
       chevrotain "3.7.2"
-      lodash "4.17.11"
+      lodash "4.17.12"
   
   "@semantic-release/commit-analyzer@^6.0.0":
     version "6.0.0"
@@ -3495,9 +3495,10 @@ Lockfile:
     version "4.4.0"
     resolved "https://registry.yarnpkg.com/lodash.without/-/lodash.without-4.4.0.tgz#3cd4574a00b67bae373a94b748772640507b7aac"
   
-  lodash@4.17.11:
-    version "4.17.11"
-    resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+  lodash@4.17.12:
+    version "4.17.12"
+    resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.12.tgz#a712c74fdc31f7ecb20fe44f157d802d208097ef"
+    integrity sha512-+CiwtLnsJhX03p20mwXuvhoebatoh5B3tt+VvYlrPgZC1g36y+RRbkufX95Xa+X4I59aWEacDFYwnJZiyBh9gA==
   
   lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1:
     version "4.17.10"

@@ -17,8 +17,7 @@
   "author": "Igor Alpert",
   "main": "dist/index.js",
   "files": [
-    "dist/rules",
-    "dist/index.js"
+    "dist"
   ],
   "scripts": {
     "build": "tsc",
