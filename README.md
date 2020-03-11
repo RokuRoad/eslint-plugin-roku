@@ -92,7 +92,9 @@ $ npm install eslint-plugin-roku --save-dev
     "roku/function-no-return": "warn",
     "roku/no-unused-params": "warn",
     "roku/function-no-return-type": "warn",
-    "roku/function-name-camelcase": "warn"
+    "roku/function-name-camelcase": "warn",
+    "roku/no-uninitialized-variables": "error",
+    "roku/no-uninitialized-functions": "error",
   }
 }
 ```
