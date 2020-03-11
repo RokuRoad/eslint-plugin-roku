@@ -12,7 +12,11 @@ const warnings = [
   'function-no-return-type',
   'function-name-camelcase',
 ]
-const errors = ['no-stop']
+const errors = [
+  'no-stop',
+  'no-uninitialized-variables',
+  'no-uninitialized-functions'
+]
 
 const allRules = [...warnings, ...errors].sort()
 
