@@ -4,3 +4,4 @@ node_modules
 __snapshots__
 .idea
 dist
+*.log
