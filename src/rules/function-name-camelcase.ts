@@ -5,7 +5,7 @@
 
 import { Rule } from 'eslint'
 
-const CAMLECASE_PATTERN = /^_?[a-z]+[a-zA-Z0-9]*$/
+const CAMELCASE_PATTERN = /^_?[a-z]+[a-zA-Z0-9]*$/
 
 const meta: Rule.RuleMetaData = {
   docs: {
@@ -15,7 +15,7 @@ const meta: Rule.RuleMetaData = {
   },
   fixable: 'code',
   messages: {
-    invalid: `Function name: "{{name}}" should match expression ${CAMLECASE_PATTERN.source}`,
+    invalid: `Function name: "{{name}}" should match expression ${CAMELCASE_PATTERN.source}`,
   },
   schema: [],
 }
@@ -25,7 +25,7 @@ const create = (context: Rule.RuleContext) => {
     const { id } = node
     const { name } = id
 
-    if (!CAMLECASE_PATTERN.test(name)) {
+    if (!CAMELCASE_PATTERN.test(name)) {
       context.report({
         data: {
           name,
