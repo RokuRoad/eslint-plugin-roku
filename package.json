@@ -34,7 +34,7 @@
     "@roku-road/bright": "^1.2.13"
   },
   "devDependencies": {
-    "@types/eslint": "4.16.3",
+    "@types/eslint": "6.8.0",
     "@types/jest": "23.3.3",
     "@types/node": "^11.9.0",
     "eslint": "5.6.0",
