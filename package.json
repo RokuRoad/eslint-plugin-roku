@@ -36,7 +36,7 @@
   "devDependencies": {
     "@types/eslint": "4.16.3",
     "@types/jest": "23.3.3",
-    "@types/node": "^11.9.0",
+    "@types/node": "^14.0.8",
     "eslint": "5.6.0",
     "jest": "23.6.0",
     "semantic-release": "15.9.16",
