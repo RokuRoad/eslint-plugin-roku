@@ -54,10 +54,10 @@
     node-fetch "^2.1.1"
     url-template "^2.0.8"
 
-"@roku-road/bright@^1.2.13":
-  version "1.2.13"
-  resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-1.2.13.tgz#3eb38a1823dde38b38ceaaaaabb989ddee312373"
-  integrity sha512-uBcBlqNhq3jRpk+iG801EfrWopL4r1sqy2bxJIGG2OyAYEAULDP21QeEHyv6ePmXA/Iny8V297TC+nt98HCkMQ==
+"@roku-road/bright@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@roku-road/bright/-/bright-1.3.2.tgz#3f62975e2031c9c312e8d723027305dd2db1506a"
+  integrity sha512-XfG0mscmdh42yM5S0y1eL6xrCOnd5oIO2Eb0+RyprOhheIHGQS88xOgnUESiJ9bJXu2gA8WZGLvY5yJwQEll5g==
   dependencies:
     chevrotain "3.7.2"
     lodash "4.17.12"
@@ -864,6 +864,7 @@ chardet@^0.7.0:
 chevrotain@3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/chevrotain/-/chevrotain-3.7.2.tgz#a1889498207e2ea637dc99e459755b810851d7a0"
+  integrity sha512-K+DuQSKRulV2UvXgqEuioiKBpzUHEgwodEmeBV0ebiO6gb07UiC5H3FLRsG/3ZYmlI6oCZu1QF5NbHkd5l7fig==
   dependencies:
     regexp-to-ast "0.3.5"
 
@@ -4808,6 +4809,7 @@ regex-not@^1.0.0, regex-not@^1.0.2:
 regexp-to-ast@0.3.5:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/regexp-to-ast/-/regexp-to-ast-0.3.5.tgz#dedadd11bbb5f849df76b4e84b0b5335831c0473"
+  integrity sha512-1CJygtdvsfNFwiyjaMLBWtg2tfEqx/jSZ8S6TV+GlNL8kiH8rb4cm5Pb7A/C2BpyM/fA8ZJEudlCwi/jvAY+Ow==
 
 regexpp@^2.0.0:
   version "2.0.0"
