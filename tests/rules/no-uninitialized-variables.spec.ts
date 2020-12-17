@@ -1,9 +1,9 @@
-import { invalidFactory, runTest, validFactory } from '../helpers'
+import { invalidFactory, runTest, validFactory } from "../helpers";
 
-const RULE_NAME = 'no-uninitialized-variables'
+const RULE_NAME = "no-uninitialized-variables";
 
-const valid = validFactory(RULE_NAME, '', '')
-const invalid = invalidFactory(RULE_NAME, '', '')
+const valid = validFactory(RULE_NAME, "", "");
+const invalid = invalidFactory(RULE_NAME, "", "");
 
 export const test = runTest(RULE_NAME, {
   invalid: [
@@ -24,16 +24,13 @@ export const test = runTest(RULE_NAME, {
       end function`,
       [
         {
-          message:
-            'Variable this is not declared in scope.',
+          message: "Variable this is not declared in scope.",
         },
         {
-          message:
-            'Variable asdfasdf is not declared in scope.',
+          message: "Variable asdfasdf is not declared in scope.",
         },
         {
-          message:
-            'Variable b is not declared in scope.',
+          message: "Variable b is not declared in scope.",
         },
       ],
     ],
@@ -55,6 +52,11 @@ export const test = runTest(RULE_NAME, {
         end function
       }
 
+      try 
+        a = 3
+      catch exp
+      end try
+
       for i = 0 to 100
         print i
       end for
@@ -65,4 +67,4 @@ export const test = runTest(RULE_NAME, {
      end function
   `,
   ].map(valid),
-})
+});
